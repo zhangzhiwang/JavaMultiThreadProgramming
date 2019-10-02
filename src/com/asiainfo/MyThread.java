@@ -8,6 +8,14 @@ package com.asiainfo;
  */
 public class MyThread extends Thread {
 	public void run() {
-		
+		System.out.println("run");
+	}
+	
+	public static void main(String[] args) throws InterruptedException {
+		MyThread myThread = new MyThread();
+		myThread.start();
+		myThread.start();// 多次调用start()方法会抛出java.lang.IllegalThreadStateException异常
+//		Thread.sleep(1);
+		System.out.println("结束");
 	}
 }
