@@ -1,4 +1,4 @@
-package com.asiainfo;
+package com.asiainfo.chapter1;
 
 /**
  * 执行start()的顺序不代表线程执行的顺序，即不是谁先启动的start()就先运行谁的run()方法

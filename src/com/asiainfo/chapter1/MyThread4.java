@@ -1,4 +1,4 @@
-package com.asiainfo;
+package com.asiainfo.chapter1;
 
 /**
  * Thread类本身就实现了Runnable接口，所以在Thread的构造方法里面传入另一个Thread是可以的，这时就将另一个Thread的run()方法交由本Thread来执行

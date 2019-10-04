@@ -1,4 +1,4 @@
-package com.asiainfo;
+package com.asiainfo.chapter1;
 
 /**
  * 当前线程堆栈跟踪信息

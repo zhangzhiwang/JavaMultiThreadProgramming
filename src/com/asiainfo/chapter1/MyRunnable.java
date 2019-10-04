@@ -1,4 +1,4 @@
-package com.asiainfo;
+package com.asiainfo.chapter1;
 
 /**
  * 通过实现Runnable接口还创建自定义线程

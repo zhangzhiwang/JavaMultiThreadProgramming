@@ -1,4 +1,4 @@
-package com.asiainfo;
+package com.asiainfo.chapter1;
 
 /**
  * 自定义线程类
