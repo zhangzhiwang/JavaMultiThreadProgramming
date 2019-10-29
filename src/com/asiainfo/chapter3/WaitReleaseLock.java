@@ -10,7 +10,8 @@ public class WaitReleaseLock {
 	public void met1(Object o) throws InterruptedException {
 		synchronized (o) {
 			System.out.println(Thread.currentThread().getName() + "--->" + "wait...");
-			o.wait();
+//			o.wait();
+			Thread.sleep(3000);
 			System.out.println(Thread.currentThread().getName() + "--->" + "wait end!");
 		}
 	}

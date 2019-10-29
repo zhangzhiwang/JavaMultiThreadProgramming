@@ -1,7 +1,7 @@
 package com.asiainfo.chapter2;
 
 /**
- * 证明同步代码块外是异步的，同步代码块内饰同步的
+ * 证明同步代码块外是异步的，同步代码块内是同步的
  *
  * @author zhangzhiwang
  * @date 2019年10月4日 下午2:04:06

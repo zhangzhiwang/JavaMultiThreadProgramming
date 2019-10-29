@@ -7,8 +7,10 @@ package com.asiainfo.chapter2;
  * @date 2019年10月4日 下午2:04:06
  */
 public class SyncBlock extends Thread {
+	String s = new String();
+	
 	public void met1() throws InterruptedException {
-		synchronized(this) {// 如果将同步代码块将方法全包围跟在方法声明处写synchronized关键字没什么区别，因为同步代码块的作用就是减小锁的粒度
+		synchronized(s) {// 如果将同步代码块将方法全包围跟在方法声明处写synchronized关键字没什么区别，因为同步代码块的作用就是减小锁的粒度
 			System.out.println(Thread.currentThread().getName() + " begin:");
 			Thread.sleep(3000);
 			System.out.println(Thread.currentThread().getName() + " end!");
