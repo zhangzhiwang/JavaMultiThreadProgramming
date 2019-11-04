@@ -27,7 +27,7 @@ public class Provider extends Thread {
 	public void run() {
 		while (true) {
 			TestMultiProviderConsumer.lock.lock();
-			while (TestMultiProviderConsumer.list.size() == 20) {
+			while (TestMultiProviderConsumer.list.size() == 10) {
 				try {
 					TestMultiProviderConsumer.condition.await();
 				} catch (InterruptedException e) {
@@ -40,6 +40,12 @@ public class Provider extends Thread {
 			System.out.println(Thread.currentThread().getName() + "生产了一个产品，目前总数为：" + TestMultiProviderConsumer.list.size());
 			TestMultiProviderConsumer.condition.signalAll();
 			TestMultiProviderConsumer.lock.unlock();
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 }

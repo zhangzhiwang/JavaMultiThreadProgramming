@@ -40,6 +40,12 @@ public class Consumer extends Thread {
 			System.out.println("	" + Thread.currentThread().getName() + "消费了一个产品，目前总数为：" + TestMultiProviderConsumer.list.size());
 			TestMultiProviderConsumer.condition.signalAll();
 			TestMultiProviderConsumer.lock.unlock();
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 }

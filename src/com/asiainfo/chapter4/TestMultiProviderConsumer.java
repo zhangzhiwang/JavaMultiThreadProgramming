@@ -21,11 +21,11 @@ public class TestMultiProviderConsumer {
 	public static void main(String[] args) {
 		for(int i = 0; i < 5; i++) {
 			Provider provider = new Provider();
-			provider.setName("provider_" + i);
+			provider.setName("provider_" + "");
 			provider.start();
 			
 			Consumer consumer = new Consumer();
-			consumer.setName("consumer_" + i);
+			consumer.setName("consumer_" + "");
 			consumer.start();
 		}
 	}
